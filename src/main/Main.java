@@ -122,16 +122,28 @@ public class Main extends Application {
 //            e.printStackTrace();
 //        }
 
+//        /*
+//        HERE I PRACTICE CSS STYLING
+//         */
+//        try {
+//            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+//            Scene scene = new Scene(root);
+//            //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm())
+//            String css = this.getClass().getResource("application.css").toExternalForm();
+//            scene.getStylesheets().add(css);
+//            primaryStage.setScene(scene);
+//            primaryStage.show();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
         /*
-        HERE I PRACTICE CSS STYLING
+        HERE I PRACTICE SWITCHING BETWEEN SCENES
          */
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-            Scene scene = new Scene(root);
-            //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm())
-            String css = this.getClass().getResource("application.css").toExternalForm();
-            scene.getStylesheets().add(css);
-            primaryStage.setScene(scene);
+            Parent root = FXMLLoader.load(getClass().getResource("scene1.fxml"));
+            Scene scene1 = new Scene(root);
+            primaryStage.setScene(scene1);
             primaryStage.show();
         } catch (Exception e) {
             e.printStackTrace();
