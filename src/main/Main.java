@@ -109,13 +109,28 @@ public class Main extends Application {
 //        primaryStage.setScene(new Scene(root));
 //        primaryStage.show();
 
+//        /*
+//        HERE I PRACTICE EVENT HANDLING USING SCENE BUILDER
+//         */
+//        try {
+//            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+//            Scene scene = new Scene(root);
+//            primaryStage.setTitle("PACMAN EATING BUTTONS!!");
+//            primaryStage.setScene(scene);
+//            primaryStage.show();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
         /*
-        HERE I PRACTICE EVENT HANDLING USING SCENE BUILDER
+        HERE I PRACTICE CSS STYLING
          */
         try {
             Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("PACMAN EATING BUTTONS!!");
+            //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm())
+            String css = this.getClass().getResource("application.css").toExternalForm();
+            scene.getStylesheets().add(css);
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
