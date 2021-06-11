@@ -101,13 +101,26 @@ public class Main extends Application {
 //        primaryStage.setScene(scene);
 //        primaryStage.show();
 
+//        /*
+//        HERE I PRACTICE USING SCENE BUILDER
+//         */
+//        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+//        primaryStage.setTitle("PACMAN EATING BUTTONS!!");
+//        primaryStage.setScene(new Scene(root));
+//        primaryStage.show();
+
         /*
-        HERE I PRACTICE USING SCENE BUILDER
+        HERE I PRACTICE EVENT HANDLING USING SCENE BUILDER
          */
-        Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
-        primaryStage.setTitle("PACMAN EATING BUTTONS!!");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("main.fxml"));
+            Scene scene = new Scene(root);
+            primaryStage.setTitle("PACMAN EATING BUTTONS!!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
 
     }
