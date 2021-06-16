@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gameBackground.jpg" />
+         </image>
+      </ImageView>
+      <ListView layoutY="38.0" prefHeight="462.0" prefWidth="200.0" />
+      <ScrollBar layoutX="186.0" layoutY="39.0" orientation="VERTICAL" prefHeight="462.0" prefWidth="14.0" />
+      <Button fx:id="homeButton" layoutY="1.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
