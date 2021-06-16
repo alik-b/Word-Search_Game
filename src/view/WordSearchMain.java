@@ -19,11 +19,13 @@ public class WordSearchMain extends Application {
 
     private void setupStage(Stage stage) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("menuScene.fxml"));
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/menuScene.fxml"));
+            Parent root = loader.load();
             stage.setTitle("Word Search Mania");
             Image icon = new Image("images/icon.png");
             stage.getIcons().add(icon);
-            String css = this.getClass().getResource("style.css").toExternalForm();
+            String css = this.getClass().getResource("/style.css").toExternalForm();
 
             Scene menuScene = new Scene(root);
             menuScene.getStylesheets().add(css);
